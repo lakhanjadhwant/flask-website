@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BookLab</title>
+    <style>
+        /* Set global styles */
+        * {
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .one{
+            width: 22%;
+            height: 22%;
+        }
+
+        /* Set styles for header and navigation */
+        header {
+            background-color: #f9f9f9;
+            justify-content: flex-start;
+            display: flex;
+        }
+
+        header nav {
+            /* background-color: #333; */
+            height: 50px;
+            line-height: 50px;
+            justify-content: flex-end;
+        }
+
+        h1 {
+            color: teal;
+            font-size: 120px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        nav {
+            background-color: #f9f9f9;
+            justify-content: flex-end;
+            display: flex;
+            padding-bottom: 5px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-left: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            /* text-transform: uppercase; */
+        }
+
+        nav a:hover {
+            color: teal;
+            font-weight: bold;
+        }
+
+        /* Set styles for main content area */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        section {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+        }
+
+        section h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+        }
+
+        li {
+            margin: 0 10px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropbtn {
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            /* change background color to solid white */
+            min-width: 160px;
+            z-index: 1;
+        }
+
+
+        .dropdown-content a {
+            display: block;
+            color: black;
+            padding: 10px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        #About {
+            width: 100%;
+
+        }
+
+        #Contact {
+            width: 100%;
+
+        }
+
+        .Contact td a img {
+            height: 25px;
+            width: 30px;
+        }
+
+        .Contact th {
+            height: 30px;
+            text-align: center;
+            width: 100px;
+        }
+
+        .Contact td {
+            height: 30px;
+            text-align: center;
+            width: 100px;
+            font-size: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <tr>
+            <td><img class="one" src="https://github.com/Divyagoyal002/Coursera/blob/main/logo.jpeg?raw=true"></td>
+            <td>
+                <h1>BookLAb</h1>
+            </td>
+        </tr>
+    </header>
+    <nav>
+        <ul style="justify-content:left">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#About">ABOUT US</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">PROFILE</a>
+                <div class="dropdown-content">
+                    <a href="errror.html">Account</a>
+                    <a href="https://replit.com/@Luckylucky24/flask-website#templates/sign.html">Sign in</a>
+                    <a href="signup.html">Sign up</a>
+                    <a href="errror.html">Privacy Policy</a>
+                    <a href="errror.html">Setting</a>
+                    <a href="errror.html">Help Center</a>
+            </li>
+            <li><a href="#Contact">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <main>
+      <iframe src="https://github.com/WittyhacksCR004/WH020_Linktree/blob/main/app.py" width="800" height="600"></iframe>
+        <section >
+            <h2>HORROR!!</h2>
+            <img  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRgWFhYZGRgaGhoeHBwcGh4eHB4aHhwcHBocHhohIS4lHiErIRwYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMDw8PEQ8PED8dGB0/MTExMT8/NDQ0NDQ/MTUxMTE0MTExMTExMTE0MTExMTExMTExMTExMTExMTExMTExMf/AABEIARIAuAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAECBQAGB//EADkQAAEDAgUCBAQFAwQCAwAAAAEAAhEDIQQSMUFRYfAFcYGRIqHB0QYTMrHhFELxI1JichWSM2OC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAMAwEAAhEDEQA/APTvxMOMN9FdskXQTSBM/Xjv5qr8VHf1Ro5mMa/dCc/vX3CTNaTKs182mIugK421/dCcY3t5oNR17uUEGN/XvzRFWP7lELwO7+SGx5iB77/4VSTHYRRWVROpHpqrPxEG3ukww92RgyYn180B2VX6zr+yMMUYvdK6KjjvIQPsxQHMrhiJ/uIP0WW/EXie+/3V2PkwOERoudyST3ouzO2JHRKCvEC91ZriddOqoOarm2Dne5V6dZ50clsoJsbq7DBt80DTnvO5B81cPdpmPv8AyhGYVXAx1QGrvMRJ90HKTFye91dkuFwitEaoF3Bw0+3ouRK/I1juylBQgAxNkhimXkT14T9ZwiOp9eyk8S20z3qopZjpP8Kazz5KHEAWJn6oOWb36oiQSZ7lXNTWPsEPXkgIRfsJ/lAZpKYY71B74SuckX1Ch74se/VFNZwNeUN53QmuAF+FRlXcmb8oDvrRoI7/AMpd9WToVTNY/L/KC18+iAp1TdJ0DjvVIMJm8wrlx/j7oh+m4Eg36dURz539PsEq1pj7o7WFUGpi246/wrUp0lCbUiwv1TTKYF57+qBinJtM9VDSZAUOcQuy899UDAMcfyiOghKTPSEem6yAbjcxrp2FyHVcblcqFKtW5S5cTN7dUw9m40CWcNwsqG9klQ0kWRGMAveVR+qIE9s7oANxH8Jg1YnSUB1QecoDl093Qybb231+aG1/W3X7Lqtcab/siufUIuhPfbogtqG95RSVBz6tkJlQoVRxUF0IhthIKZaJ4CzqeKABlskxBk2vfz4TNGrbS6o0KQO50Ry/aPfhKsdvaeil7wT0VDVFzRMmLWtqbRrtqmGGQkqZ9U210fpgoG6bwenTVHb+3T7JLLabotE2lAQsi6sX8ITSTfXj+FLoPnwqOrEX6rlDqdidlyBB7xoNO5Q3u9Bug1XxaL7oWd2l4tusgz60npCE4x0QnvgoZfJ124KDswuSgOrzIi3eqmu83CoO/VBBnZUe50dSmLCRuqkgKKDRaUVz4uukDU9UE1c7g0ENkgS4w0eZ2CAL6xJUOJQgbogRFQ4o7Kkm1kLNtClkCOVRq0HGL6IgeNISmHJ3/f6IrY+yBlj4HRO036eV0lTcBvPVHfiA6Tp6Ae0WCofZXvt7q7alo7hZ1J0jW6ZbIEboHGvgd3VptZK0yRvqiMcdtFQYuMTPouUucY8guQefruOZS5waI1Varo1QS6LrIk7whzEIjXbkeyHWYRr8+vRBDqUNzfDcka39Rt5obPdVeOwoDYUDDw0X174Sz6k6D3U1ySBwZiLm2tpQmsG5gQdumlvRFCqPlLvaiuKA6SiLhVzlQoJlBZr4RGPKXzIzaoykZbyIdJsNxGl7eyBplWLojsRKzmvTDDyqDseeytJjrBZrUcVC6NBAiwj35PVBoMedu+qcoO9+VmMMJrCvuOFQ/ngwE3TbZKMHqmWOLTHfkqLVG8rldtwVyDzWIdfVAzq1cfFc+aoBosghd3wpe2RPHyGl1UMvrCG431QDc7VUzKXmUJ4UVBduhPfKmogOcg570OVBla3hXg4qtc5zy2ASABJICIyS5QSjYvCupuyu8wdnNOjh0KCCgqEQKoUuKAjCisQqeqZrhrXQ12YDcAiebG6C7Hx5bo7X9JSgcCE1hqZOmwJ1A0EnX9lQ4x5MCAmKIv1SmGMHvROUDKo1KYtbXb5ItNsn0QMO8FGYRt/hUHYYC5SDIMefqoRHmqzAVQNAHWfkmq9GBrfhKPPr+6yrndByq1GQOqjN1uhVnbSgGSpFTKQRtdRUfaEo96giu8kknUyT+6XeeVZ5Q3IKl91vYbFNY/L8Q/02kQ6BDmyZEGXQZHVYeGZmeBEyQt/JnxD7AH/TLREQ4NYYHeg3uqLVqL6uFBAJNNzvh1dAJkTrIBn/APK82eV9E8EaGPqtH6WuBHMBpY8zyXsf7rxvjmFyVncOJcOACTI9DKDOBRLRM3vaNBtfff2Qg5WZyoDtdAUtKhh1Vg6OPqqCNaj0j0QGHqjNfwgOKvITNB9uPqk4vKPTsqNWhVjrNk5RcSRp/Ky6LpMCw73T9KpsED/5kRxdchky3uyhUY+Jfska0zqiuf2dUCsbrIl5i6A9xPnf5aohfZALyDIMGNrdD8igCSUMtk29UR6BUqHQaKDqrgEu4orKLnXAtudvdMPweQBxuTGUQYJP7oGPw9hZfndZrIvqOSPaStrwKm3M+q93xtn4NCMoAJ62IaPXlaP4cw+RjmnKS5tv+Un43Dpt6N5S2IpFjQykAXE/CB8Of4mulxBGhHlYKjQwIjJwabhO5yPv53eUhj/DW12lpOVzZLXATefjEbgiDH/BbX9OGCk3UwWk73AcdtPhsEWlhKZY1z5BaC4wY/5XOsRwVR4Kp+HKg/S9juhJa4+hEH3WXicO5jix4yuGx7uF9KOGa9uaC0yNcpIm5Dh5bSdVdnhrIznKGibkWAIFvR2aAOVIPl7SrSvY/iX8P/AKlNtwcrmtGov8UDy13leSEBBNIXTTTwgtd0TmDpgkZtN0EsYT1/ZGC1amCaGyJA637/lKVaDhEgRsQqCYJoTbGXif8cJbDMuOO9kyH6D+fWUDL9LfwuQn1BHpv31XKjDrQO7JN9WbAI9RojspB5WQbNG6G54KqyT180TD4VzzbQanTvyUC5lxgTPAWlhPDGgZ6hEefc+QTGJwjaLC+J2HJPEe5twh08D+ZlOZzWkGHEfqMSTfX04VDbcFVzyxjfywJbBaeIdqQXTENVH+HP8AzQ/P/wDGxzz+ZJDSLMEdeLfpS7KD2PDwWyXfoEzEfEA43kidbeQ0b8ZqPrPpYdgPxmYJ+M2s5w2AAJAP+2UE+H4p9JtGoXWgEt/+t5LGx5FrSbcSmaePoV3zUa5tOCJBjNdroOxPEHNpCp+JvCcuZ/5jGUqbKbGNLj8WVkDLAILpkGOdVi+HlzqZAdAEPMmxa0tJH2/6oPVeDY/82mwHWm5oBOrmfEA49YEHyHK0sfULWlp0gkmYsLNH/sW+xXlfw/hyx7GPJl4a5kE3a5pJHmIAIXqDgRVc91SS13wtaTbK3dw5Jk9JRTbzMkdR68n0Gizy19R4psj4Ms5wXMEjMSQHAOdeIvp1VMFhalMvY8ZqV8ryRngD+4bjgm8genqMJgMrA2DNyT1cZPpJ+SqM3DYXKZdVc6DIblY1sxGgEx0lLeL+B0azSXMAfs9lne0X9VsnB7z6d2/yg12kIPnWJ8HfQdDm5mn9L9B6jYrUwmCYYJEWnp7L02JYXNIMEHkd9hefxuBLAS2cvA26jogZc9uUNBDptPCUqOHw/MdUsHhv9xM6wgVKhJFygarlmg+SEHAGdfSEzgsA6oYuOT0TeKwDGCLl3IJsgy/zJMcrkRuFvrAvvN+FyDDqh2+nCWew6Jl7rITBmIAF5hZF8HhC85QOpPAXosLhWtAgW66+aDhqDWAMBlx18+nQaJylUgxv37KjQosgaDn7mVneJVCagY34jEZf+XIM6Aak6edj3iPif5TYF3uMAA3k7d6T6FvwjC5Bmd8T3fqOw3yt6D56ooOG/D72jN+Y3O7WWSAOAZ+n8aVDwYsqMewtkNyuc5suJP6nT1sIERA8ic4homTprfbrx5lOeFVplzrDVo3I5PmUFfFPwnRxDRnzNe1uVrmuMNuSPh0Nzfc8rwXgf4cLw7O6GyWAtuHZXEEz/tI45X0PxzHRRIaS0ucxsN/VkLhnIi4+Gb7LFw/hT6jSWQ5g+ENDywZRf4WgZRaB2UQOthKTRlmm2A0BrzGUDMZFwZkzMz1U+D4p7mEyHQ+o0P1nK7KCY1JHXYpvHfgynVpnM7JVNwWRkaQIa3LFwNzYmT5LE8Ge6lTDKgfTeHPzzTdE5jfMRliLzMQUV6fwvB53vc85mtLcgmADE3aNTMETMQFvykfBnzSb8GQbRo4f7ub63v7p4lEL1DtclJ126JwmTPcIb2DZBnvYANZKB+XJsLrQfTPELmNDBYfEeUHk/FfBHM+MNhk3HHJtslx4eCJ0Xs2V80tdvbpBSv8ASsGunlb1CoR8LphrDf8Az3KWxJ4WjVcBZogLGxeIAMkW2j7d6oAPA1K5AxGPbECQOu3t6LkGE9kDnvhM+HMAl5Glp68qK8EQNSYAHVPCmGMDf2531UFWONuT8rplrXzlaA58ZoJa0RoLuMTb5ehRL4TNPFOMQ2UGjhfCKLB+bWrsdUFy1sODJmBIJsJO2pOqB/5tj3ltBlSq7gDIwf8AaoQDHol2eEvrH/Vecv8AsbYL0WFwDWNysaGgbAR35opfB4R5INVwc4GzGiGM6gG7j/yd6QtljIS7WAakdUzTeXWBHfmgHiPDGVXB7gS4WEOI3J29Vp4DDNptIbMEySbknQkpVlQjj6Igxd/O+nzQaObvv1QatNr4zNBgggEaHYpR1YnfXsFSyrbXz4QNvqJWvWJ/wpJ4XCnboiOY9Xub9FwaFSrUsgIwg2j3WfXMEyboVfGNaTJ8uUt/Vh2gjoUDLnkGFSrWAakqmK10tv8Abosqt4kZLRBAHrsqNtxkTK89j6sG94Onf1Vv64wRN9v28kjiariIdwbx3O6BZ+KDv7Y2XJB7hPuuUG0yjD2xeL9O9Ey3Cude3SVfBvbmJI781q4aIuLSO/dB5zH0XM79QpwbbBb/AI3gc7A5o32E/wCFTw/wPQud0IHKC+AbytQOQP6IUyRPujOYO/RFQ90lXZUjRUa0LnDaQgM0q5YIsIOxQ2OGn0KOwhBkY3C4kAupVzmizHsZkMRaQAQs/wAO/F8VfyMVTFF4MZgfhki0g/pBG8keS9WGA76Lz34i/CrsS9rvzWMbx+X8XT4pkoNLG/irD03U2Bwe55I+FzYYBcucdhG2tkv4b4q/GOc8E08O05W7PqG1yf7R0F+Vj4L8AMYXGpVL22+Foyg8ZpJ9ui9PQpMY3IwAAWAARDbi0fC3YaX7Kz8bVsQCQfomJkQEpXqtaRmIF97D1Qec8Ue5huTdJUfETBHstfxetQIJzhx2A562XmKrrmObKjSPiGW8BZRxDs0gxz16KCLIBYVAfE4/4QRIIN/olH+JOcD+51Q6jZBHdklKBmnWuuQqYXKD07HuAN40/ZbWCrtcJBuNbrz4qS2OqtRqlrrKj2mHqWEGydbVa3m/K8VhsWRF+ytzDVpBPfVBtvqSDMG1ko+sYiAYuowb5aRHvMdCUJxPn380DlCvMSmatMPH14WfmFrpjDST8Nrd2RS7KZaYm4hMMNkQsJJlBxAI0BQMsq+aFXxZ8wNANdEs154lFbRJvCAB8UZfMYO4Pnqsir46c7srZB0kmP4WrjsAILiBEXnZY3iJbo0CedgOvVBVv4iLXS4WtbjySXi/jLaoDWtM2JJ/a2qSxLC4g6mL6D2VWUOiIFKoXCNU8MI43a35xfpKQNHMbyI19EHMfJsCqukbLmAD6KJQCqMsVnOWjXMBZmqgNSauRMOwLkVqU62ql9QcWStMwfdNNYERQV4O/stLDeIwIuOJWU9iDUN90V6rDeIguALov6JmpiDIA3XhzVcNDH0T1PG1DBzEnvhUesa6+pK08G4xmB01leX8OxWYS4w8W5lblESAQbfXdBsDHERLhrsmqWJzTZYrCLDmPe8ppkzEmUDbGfESRF7BMGpBiySu4C91aTugbqPBF4PfCwPEcNldYW1C1jOWdUPEsY4S6xFh14F0R5l+GGzbpaqwA7Abn6R916llQNOkiNIEbyvK4qmQ9wiwJtvE8KgdSvIsDA0j7rPxL5+Lsotcm9yOvrpCUcoKRe6giNlYXUm6BSubHpKQE7J/GGGxyk2qBjDgrlbD+XfRciiTcFN0z30SDtEzQqyABqiGCwT0Q6zNoCK53olnvPmqFjTnTXgL0/guEIZIgm036fdZOGqMzA6HvZej8OxRYzQGexYc/VBDWU2OzEQRbT59d/dauHY3YiIEEFZj6oMA5ettCrYdwzEA5RvpH7oNh7QCIjnX1S48UZmykgHWbRKRxDfXygTKx4+K8/x5oPXf17GxcHyMk+yFSx+YxELzVIDNYm57lMUnvbyRrtI5B4RXqalb4bd+XzSv9QSNJuOh/hZQxrnPAc31HH7eyYdi26A6TM33j5Ko0XP1m0eywfEHgu5gp1uNZFyZPsPJZWMIkxJ9IPfkgSxNQO30G3mlGxumG05Ol1xpHyUCxAQ8wTAoE21JmFX/AMc/4swyxzv0QZGLMujhUZhzEp2jhrmdSm34cgaQgz6MggLkcMv81ygC5trfdRSfldJVn6CEJ7TwgZqXi+qG9uqrSfyrvHVAOk8hNf1TjcbeiX/Jn5eynJAO/p9UB6OPLSSDrqOei2cN4qwtjKJNjN/WNF5pjJKfoUrTae7KjdZWmMrrXt+8D+UJrxPU9NAkMK7K7Ycpt8n4gZadesb6IHMOwZSdNYjyTzKDHCBIO55+yy8NVgAfQW2jojjFxmggSII4HT5qiMXUDQIaCTz7pZz2uEmQbd+S7E5nHmOLarqdCwnWLeXCCRUAiFbMXG/+VZlMA+g7hOUWAmSYHeqBJ7BmgcX4TNDDht5vJ7vKh+Ia2YBjp9lNF4Akb37CAgpsbeLk68noeEnja14bEXlVx/iIY0mbmyw6fiTZ+Kd7/dAes/Icwvx9lV2Oza2NxrtELPrVQ86nkITD1UDrnyBeL6fyuSrHHNEcrlBdziYAUOBjUqPzPivEQOz8kUVJ2+c/NFAqM90Sg/Z3vKs+mTxppbvlQcNadEQUGI+SnITGiFTMWMIwcRcel0EspDso7HRYDvzU03zBOnoruBVVZjhvH16qRihpqPP9kF7LDdc2j5IHGVZIDYM9nyRKjw23CSa0jv7KMjuf2QaQcCLG5+nMqGVBImD189SkmMdsuyO3HPkiH212g3tJ1A0Hkp/qIvPHtF1lAOE6+cd8qKhfoS4ehBQO4/xEGzQCdz1WS/HO5781zqYAF5PeqXfQ5ndACpWc90kqGsHCO2jGy4kcKAUAXj6+iqHg3kX0HXYaIj27lo042sfsuLDFmiZ+U3PsgJ+X3/K5MYdmgAsLeXmVyoA3Q+n7BMVFy5RRGix/7fQIp074XLkC1VojRWwenopXIDAW75KYA+FQuQGpsGXQa/RdTFvb6rlyBp39voqVfupXKgf9vurv/T30XLkC79FQaO9f2UrkClTUef0CkiyhcogbksGiW23+i5ciiOaI04/dFYNPIfVcuRBaP6Xd8qVy5Uf/2Q==">
+            <button>Find More</button>
+        </section>
+        <section>
+            <h2>FICTION~</h2>
+            <img src="https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/XRGL7V4M5VAZHKR7VDB7F6XILE.jpg">
+            <button>Find More</button>
+        </section>
+        <section>
+            <h2>Mystery</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Mystery_January_1934.jpg">
+            <button>Find More</button>
+        </section>
+        <section>
+            <h2>Historical</h2>
+            <img src="https://historicalnovelsociety.org/wp-content/uploads/2018/10/defining-historical-fiction-genre.jpg">
+            <button>Find More</button>
+        </section>
+        <section>
+            <h2>Novel</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/1769_Laurence_Sterne_Tristram_Shandy_v6_p70.jpg/220px-1769_Laurence_Sterne_Tristram_Shandy_v6_p70.jpg">
+            <button>Find More</button>
+        </section>
+        <section>
+            <h2>Narrative</h2>
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSaCgUsRlN9KWwtFIpZTkcRr8aGUHa84BIsQFbmDpAadoxhJ6oX">
+            <button>Find More</button>
+        </section>
+    </main>
+    <section id="About">
+        <h2>About BookLAb !</h2>
+        <p>Book Lab promises to suggest books to users based on their reading preferences and areas of interest. The
+            website employs an algorithm that examines users' reading preferences and history to recommend books they might like.
+            Users are asked to build profiles and provide information about their favourite genres, authors, and books
+            when they first visit theBook Lab website. Each user has a unique reading profile built using this data, which is subsequently
+            utilised to provide book recommendations.
+            To generate its book suggestions, the Book Lab algorithm combines data analysis with human curation. To
+            recommend novels that are likely to be popular, it takes into account elements including genre, author, narrative, characters, writing
+            style, and reader reviews.On the Book Lab website, users can search for books by title, author, or genre as well as explore
+            recommendations for books.
+            A summary, reader comments, and connections to online book stores are all included in each book listing.
+            The "Book Lab Approved" mark, which is given to books that have been chosen by the Book Lab team as
+            outstanding readings, is one of the distinctive aspects of Book Lab. The goal of this categorization is to introduce people to high-caliber
+            books that they might not have otherwise come across.
+            In general, Book Lab is a helpful tool for voracious readers looking for new novels to read. The website
+            offers individualised recommendations that are catered to each person's reading habits by utilising user data and expert curation.
+        </p>
+    </section>
+    <section id="Contact">
+        <h2>Contact Us!</h2>
+        <div class="Contact">
+            <center>
+                <table>
+                    <tr>
+                        <td><a href="mailto:geekgang766@.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"></a></td>
+                        <td><a href="7806061028"><img src="https://www.tuktukdesign.com/wp-content/uploads/2020/01/call-icon-vector.jpg"></a></td>
+                    </tr>
+                    <tr>
+                        <td>G-mail</td>
+                        <td>+(91)9977893405</td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+    </section>
+    <footer>
+        <p style="color:white">Copyright © BookLab 2023</p>
+    </footer>
+</body>
+
+</html>
